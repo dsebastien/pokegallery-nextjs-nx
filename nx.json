@@ -1,0 +1,44 @@
+{
+  "npmScope": "pokemon",
+  "affected": {
+    "defaultBase": "master"
+  },
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.base.json": "*",
+    "tslint.json": "*",
+    ".eslintrc.json": "*",
+    "nx.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "accessToken": "NDBiNWI3MmItMGZkYy00YzAzLTg5M2ItNTY5NmM0YmU3OWUwfHJlYWQtd3JpdGU=",
+        "cacheableOperations": [
+          "build",
+          "test",
+          "lint",
+          "e2e"
+        ],
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
+      }
+    }
+  },
+  "projects": {
+    "pokegallery": {
+      "tags": []
+    },
+    "pokegallery-e2e": {
+      "tags": [],
+      "implicitDependencies": [
+        "pokegallery"
+      ]
+    }
+  }
+}
