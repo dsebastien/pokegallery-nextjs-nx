@@ -6,6 +6,8 @@
     "nx": "nx",
     "start": "nx serve",
     "build": "nx build",
+    "build:pokegallery": "nx build pokegallery",
+    "export:pokegallery": "nx export pokegallery",
     "test": "nx test",
     "lint": "nx workspace-lint && nx lint",
     "e2e": "nx e2e",
