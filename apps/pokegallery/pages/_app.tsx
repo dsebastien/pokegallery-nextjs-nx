@@ -14,7 +14,6 @@ function PokeGalleryApp({ Component, pageProps }: AppProps) {
         <header className="">
           <Image src="/images/pokemon.png" width="3445" height="1261" layout={"responsive"} />
           <br /><br />
-          <h1>yo! pokeGallery!</h1>
         </header>
         <main>
           <Component {...pageProps} />
